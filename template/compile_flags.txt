@@ -1,0 +1,8 @@
+--target=ez80
+-nostdinc
+-isystem
+.toolchain/cedev/include
+-Isrc
+-D__TICE__=1
+-Wall
+-Wextra

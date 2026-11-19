@@ -1,0 +1,4 @@
+{
+  "clangd.path": "${workspaceFolder}/.toolchain/clangd/bin/clangd",
+  "C_Cpp.intelliSenseEngine": "disabled"
+}
