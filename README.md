@@ -29,3 +29,7 @@ The template includes:
 - Don't override this flake's nixpkgs (`inputs.cedev-nix.inputs.nixpkgs.follows = ...`): a different nixpkgs means a different clangd build. Have your project follow it instead, as the template does (`inputs.nixpkgs.follows = "cedev-nix/nixpkgs"`).
 - CEdev comes from the official v15.0 release builds: `aarch64-darwin`, `x86_64-darwin` and `x86_64-linux`. clangd is pinned to the LLVM fork commit that release's `ez80-clang` was built from.
 - The Linux package hasn't been tested yet.
+
+## License
+
+The Nix code in this repository is MIT licensed. CEdev and LLVM are downloaded from their upstream projects and keep their own licenses.
