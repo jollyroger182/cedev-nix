@@ -35,9 +35,9 @@
           # The .dmg also carries Finder decorations next to CEdev/.
           sourceRoot = "CEdev";
 
-          nativeBuildInputs = lib.optionals stdenv.isDarwin [ pkgs.undmg ]
-            ++ lib.optionals stdenv.isLinux [ pkgs.autoPatchelfHook ];
-          buildInputs = lib.optionals stdenv.isLinux [ stdenv.cc.cc.lib ];
+          nativeBuildInputs = lib.optionals stdenv.hostPlatform.isDarwin [ pkgs.undmg ]
+            ++ lib.optionals stdenv.hostPlatform.isLinux [ pkgs.autoPatchelfHook ];
+          buildInputs = lib.optionals stdenv.hostPlatform.isLinux [ stdenv.cc.cc.lib ];
 
           dontConfigure = true;
           dontBuild = true;
